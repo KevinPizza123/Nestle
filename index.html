@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis Hídrica Corporativa: Nestlé, Big Tech e IA</title>
+    <style>
+        :root {
+            --bg-main: #0b1120;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-cyan: #38bdf8;
+            --accent-red: #f43f5e;
+            --accent-amber: #fbbf24;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0 1rem 4rem;
+        }
+
+        header {
+            max-width: 900px;
+            margin: 3rem auto;
+            text-align: center;
+        }
+
+        .tag {
+            background-color: rgba(244, 63, 94, 0.15);
+            color: var(--accent-red);
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #38bdf8, #f43f5e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .lead {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .quote-box {
+            background-color: rgba(15, 23, 42, 0.8);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.25rem 0;
+            font-style: italic;
+            color: #cbd5e1;
+        }
+
+        .quote-author {
+            margin-top: 0.5rem;
+            font-style: normal;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .subcard {
+            background-color: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.25rem;
+        }
+
+        .subcard h3 {
+            font-size: 1.15rem;
+            color: var(--accent-amber);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-highlight {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--accent-cyan);
+            margin: 0.5rem 0;
+        }
+
+        ul {
+            padding-left: 1.25rem;
+            margin-top: 0.5rem;
+            color: #cbd5e1;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .action-banner {
+            border-left: 4px solid var(--accent-cyan);
+            background: linear-gradient(90deg, rgba(56, 189, 248, 0.1), transparent);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="tag">Investigación y Denuncia</span>
+        <h1>El Negocio del Agua: De Nestlé a la Inteligencia Artificial</h1>
+        <p class="lead">
+            La privatización de recursos hídricos, la sobreexplotación de acuíferos y la nueva sed de los centros de datos tecnológicos ponen en riesgo el acceso universal al agua potable.
+        </p>
+    </header>
+
+    <main>
+        <!-- Sección Nestlé -->
+        <section class="card">
+            <h2>Nestlé y la Mercantilización del Agua</h2>
+            <p>
+                Nestlé ha sido foco de controversia global durante décadas por extraer millones de litros de agua en zonas propensas a la sequía o con escasez severa, pagando tarifas insignificantes a los gobiernos locales y vendiendo el agua embotellada con márgenes de ganancia masivos.
+            </p>
+
+            <div class="quote-box">
+                «El agua es, por supuesto, el alimento más básico. Hoy en día, la gente sigue opinando que el agua debería ser un derecho humano; ese es un punto de vista extremo.»
+                <div class="quote-author">— Peter Brabeck-Letmathe, ex-CEO y ex-Presidente de Nestlé (Documental <em>We Feed the World</em>, 2005)</div>
+            </div>
+
+            <div class="grid">
+                <div class="subcard">
+                    <h3>Agotamiento de Acuíferos</h3>
+                    <p>Extracción en regiones con estrés hídrico como California (durante sequías severas), Pakistán (dejando a comunidades locales sin agua subterránea) y Michigan.</p>
+                </div>
+                <div class="subcard">
+                    <h3>Filtros y Escándalos Sanitarios</h3>
+                    <p>Investigaciones en Europa revelaron el uso no autorizado de tratamientos de desinfección en aguas comercializadas como "minerales naturales" (Vittel, Perrier).</p>
+                </div>
+                <div class="subcard">
+                    <h3>Crisis del Plástico</h3>
+                    <p>El modelo de agua embotellada genera millones de toneladas de residuos plásticos de un solo uso que terminan en vertederos y océanos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección IA y Centros de Datos -->
+        <section class="card">
+            <h2>La Sed Invisible de la Inteligencia Artificial</h2>
+            <p>
+                Entrenar y operar modelos masivos de lenguaje (LLMs) requiere millones de servidores en centros de datos. Para evitar sobrecalentamientos, se utilizan torres de enfriamiento evaporativo que consumen ingentes cantidades de agua potable local.
+            </p>
+
+            <div class="grid">
+                <div class="subcard">
+                    <h3>Enfriamiento Evaporativo</h3>
+                    <div class="stat-highlight">Miles de millones de litros</div>
+                    <p>Empresas como Microsoft, Google y Meta han reportado aumentos sustanciales en su consumo de agua para respaldar sus infraestructuras de computación en la nube e IA.</p>
+                </div>
+                <div class="subcard">
+                    <h3>Impacto Comunitario</h3>
+                    <div class="stat-highlight">Estrés Local</div>
+                    <p>Centros de datos ubicados en zonas semidesérticas (como Arizona, Iowa o Chile) compiten directamente con las redes municipales de agua potable de la población civil.</p>
+                </div>
+                <div class="subcard">
+                    <h3>Huella Indirecta</h3>
+                    <div class="stat-highlight">Energía + Agua</div>
+                    <p>Además del agua usada en sitio, la generación eléctrica termoeléctrica que alimenta las plantas computacionales requiere millones de litros adicionales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Otras Industrias -->
+        <section class="card">
+            <h2>Otras Grandes Industrias con Alta Huella Hídrica</h2>
+            <div class="grid">
+                <div class="subcard">
+                    <h3>Bebidas Azucaradas</h3>
+                    <p>Corporaciones de refrescos extraen grandes volúmenes en países del sur global, secando pozos artesanales campesinos para producir jarabes y gaseosas.</p>
+                </div>
+                <div class="subcard">
+                    <h3>Fast Fashion (Moda Rápida)</h3>
+                    <p>La producción de una sola camiseta de algodón puede requerir hasta 2.700 litros de agua, sumado a la contaminación de ríos por tintes tóxicos en Asia.</p>
+                </div>
+                <div class="subcard">
+                    <h3>Ganadería y Agricultura Intensiva</h3>
+                    <p>El cultivo masivo de forrajes (como la soja y la alfalfa) y la ganadería industrial concentran más del 70% del consumo de agua dulce del planeta.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acciones -->
+        <section class="card action-banner">
+            <h2>¿Qué Podemos Hacer?</h2>
+            <ul>
+                <li><strong>Evitar el agua embotellada:</strong> Priorizar el uso de filtros domésticos y termos reutilizables.</li>
+                <li><strong>Consumo consciente:</strong> Apoyar marcas locales y alternativas cooperativas de alimentos y bebidas.</li>
+                <li><strong>Exigir transparencia tecnológica:</strong> Respaldar regulaciones que obliguen a las empresas de tecnología e IA a publicar su huella hídrica y utilizar sistemas de enfriamiento en circuito cerrado.</li>
+                <li><strong>Defensa del agua:</strong> Respaldar leyes que reconozcan el agua como un bien común inalienable y un derecho humano no privatizable.</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
